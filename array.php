@@ -30,16 +30,21 @@ function cari($search_value, $array, $id_path) {
      
    return null; 
 } 
-
 $arr = [
  ['f', 'g', 'h', 'i'],
  ['j', 'k', 'p', 'q'],
  ['r', 's', 't', 'u']
 ];
-
-$search_path = cari('f',$arr, array('$'),true); 
-  
+$search_path = cari('g',$arr, array('$')); 
 print($search_path);
+if($search_path  !== false){
+   echo " true";
+}
+else{
+   echo " false";
+}
+$cari = 'f';
+
 
 
 
